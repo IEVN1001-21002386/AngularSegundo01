@@ -5,10 +5,11 @@ import { MultipliacionComponent } from "./formularios/multipliacion/multipliacio
 import { AporBComponent } from "./formularios/apor-b/apor-b.component";
 import { initFlowbite } from 'flowbite';
 import { NavbarComponent } from "./navbar/navbar.component";
+import { ZodiacoComponent } from "./formularios/zodiaco/zodiaco.component";
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, DistanciaComponent, MultipliacionComponent, AporBComponent, NavbarComponent],
+  imports: [RouterOutlet, DistanciaComponent, MultipliacionComponent, AporBComponent, NavbarComponent, ZodiacoComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
