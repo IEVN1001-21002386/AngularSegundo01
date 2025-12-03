@@ -1,5 +1,25 @@
-import { Routes } from '@angular/router';
-import { SignUpComponent } from './auth/features/sign-up/sign-up.component';
+
+/* import { SignUpComponent } from './auth/features/sign-up/sign-up.component';
+
+
+export default[
+  {
+    path: 'listaalumnos',
+    loadComponent:()=> import('./alumnos/alumnos.component')
+  },
+  {
+    path: 'agregar',
+    loadComponent:()=> import('./agregar/agregar.component')
+  },
+  {
+    path: 'eliminar/:matricula',
+    loadComponent:()=> import('./eliminar/eliminar.component').then(c=>c.EliminarComponent)
+  },
+  {
+    path: 'editar/:matricula',
+    loadComponent:()=> import('./editar/editar.component').then(c=>c.EditarComponent)
+  }
+] as Routes
 
 export const routes: Routes = [
     {
@@ -61,4 +81,24 @@ export const routes: Routes = [
 
     {path: '', redirectTo: 'admin', pathMatch: 'full'},
     {path: '**', redirectTo: 'admin'},
+]; */
+ 
+import { Routes } from '@angular/router';
+ 
+export const routes: Routes = [
+/*   {
+    path: 'auth',
+    loadChildren: () =>
+      import('./auth/features/auth.routes').then((m) => m.default),
+  }, */
+  {
+    path: 'utl',
+    loadChildren: () =>
+      import('./utl/utl.routes').then((m) => m.default),
+  },
+/*   {
+    path: 'formularios',
+    loadChildren: () =>
+      import('./formularios/formularios.routes').then((m) => m.default),
+  }, */
 ];

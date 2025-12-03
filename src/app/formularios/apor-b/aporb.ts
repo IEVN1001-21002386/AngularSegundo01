@@ -6,12 +6,10 @@ export class multiplicacion {
   calcular() {
     let a = Number(this.a);
     let b = Number(this.b);
+    
+    this.resultado = 0; 
 
-    this.resultado = 0;
-
-    if (a == 0 || b == 0) {
-      this.resultado = 0;
-    } else {
+    if (a !== 0 && b !== 0) {
       let i = 1;
       while (i <= b) {
         this.resultado = this.resultado + a;

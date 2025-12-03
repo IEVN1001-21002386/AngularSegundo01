@@ -13,16 +13,15 @@ export class Zodiaco {
     this.edad = hoy.getFullYear() - this.anio;
     
     if (this.mes > hoy.getMonth() + 1) {
-      this.edad = this.edad ;
+      this.edad = this.edad;
     }
     
     if (this.mes == hoy.getMonth() + 1) {
       if (this.dia > hoy.getDate()) {
-        this.edad = this.edad ;
+        this.edad = this.edad;
       }
     }
   }
-
 
   Signo() {
     let signos = [
